@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CollegeCrawl.iml" filepath="$PROJECT_DIR$/CollegeCrawl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../CollegeCrawl-desktop/CollegeCrawl-desktop.iml" filepath="$PROJECT_DIR$/../CollegeCrawl-desktop/CollegeCrawl-desktop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../CollegeCrawl-html/CollegeCrawl-html.iml" filepath="$PROJECT_DIR$/../CollegeCrawl-html/CollegeCrawl-html.iml" />
+    </modules>
+  </component>
+</project>
+
