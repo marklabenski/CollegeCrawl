@@ -20,6 +20,11 @@ public class CollegeCrawlGame implements ApplicationListener {
 	public void create() {		
 		float w = Gdx.graphics.getWidth();
 		float h = Gdx.graphics.getHeight();
+
+        //testzeile
+        //hallo
+
+        //GIT sucks
 		
 		camera = new OrthographicCamera(1, h/w);
 		batch = new SpriteBatch();
