@@ -12,5 +12,7 @@ public class Main {
 		cfg.height = 320;
 		
 		new LwjglApplication(new CollegeCrawlGame(), cfg);
+		
+		//wiiiiiiiii christoph
 	}
 }
