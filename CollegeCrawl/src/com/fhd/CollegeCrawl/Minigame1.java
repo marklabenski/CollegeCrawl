@@ -18,10 +18,10 @@ public class Minigame1 extends Minigame
 {
 
 	ArrayList<Block> blocks;
-	private boolean gameFinished = false ;
-	private Player player;
-	private Random random = new Random();
-	private float gravity = 0.6f;
+    private boolean gameFinished = false ;
+    private Player player;
+    private Random random = new Random();
+    private float gravity = 0.6f;
 	SpriteBatch batch;
 	MaCamera camera;
 	
@@ -39,10 +39,10 @@ public class Minigame1 extends Minigame
 
 
 	public void run() {
-		Gdx.gl.glClearColor(0.2f, 0.2f, 0.2f, 1);
-		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-		camera.update();
-		batch.setProjectionMatrix(camera.combined);
+        Gdx.gl.glClearColor(0.2f, 0.2f, 0.2f, 1);
+        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+        camera.update();
+        batch.setProjectionMatrix(camera.combined);
 		
 		camera.goHereSmoth(player.getX(),player.getY());
 		

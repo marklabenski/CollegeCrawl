@@ -1,5 +1,6 @@
 package com.fhd.CollegeCrawl;
 
+import Minigames.BugHunt.BugHuntCore;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Keys;
@@ -15,22 +16,29 @@ public class CollegeCrawlGame implements ApplicationListener
 	private MaCamera camera;
 	private SpriteBatch batch;
 	private Minigame minigame = null;
-	private Sprite tempsprite;
-	
+	private Sprite worldmap;
+	private Sprite player;
+
 	@Override
 	public void create() {
 		camera = new MaCamera();
-		batch = new SpriteBatch();
-		
-		tempsprite = new Sprite(new Texture("content/1.png"));
-		
 		camera.setToOrtho(true);
+		camera.zoom = 0.5f;
+		batch = new SpriteBatch();
+
+		player = new Sprite(new Texture("content/girl_walk/1.png"));
+		player.setBounds(100, 100, 64, 64);
+		player.flip(false, true);
+		
+		worldmap = new Sprite(new Texture("content/map.png"));
+		worldmap.setBounds(0, 0, 1024, 1024);
+		worldmap.flip(false, true);
 	}
 
 
 	@Override
 	public void render() {
-		
+
 		if(minigame != null)
 		{
 			minigame.run();
@@ -42,32 +50,43 @@ public class CollegeCrawlGame implements ApplicationListener
 			camera.update();
 			batch.setProjectionMatrix(camera.combined);
 
-			camera.goHereSmoth(tempsprite.getX(), tempsprite.getY());
-			camera.zoom += 0.1f;
-			
+			camera.goHereSmoth(player.getX(), player.getY());
+
 			batch.begin();
-			
-			tempsprite.setBounds(200, 200, 200, 200);
-			tempsprite.setOrigin(100, 100);
-			tempsprite.rotate(5);
-			
-			
-			tempsprite.draw(batch);
+
+			worldmap.draw(batch);
+			player.draw(batch);
 			
 			batch.end();
-			
 		}
-		
-		if(Gdx.input.isKeyPressed(Keys.NUM_1)){
+
+		if(Gdx.input.isKeyPressed(Keys.NUM_1))
+		{
 			minigame = null;
-			minigame = new Minigame1();
+//			minigame = new Minigame1();
+			minigame = new BugHuntCore();
 		}
-		else if(Gdx.input.isKeyPressed(Keys.NUM_2)){
+		if(Gdx.input.isKeyPressed(Keys.NUM_2))
+		{
 			minigame = null;
 			minigame = new Minigame2();	
 		}
-		else if(Gdx.input.isKeyPressed(Keys.NUM_3)){
+		if(Gdx.input.isKeyPressed(Keys.NUM_3))
+		{
 			minigame = null;
+		}
+
+		if(Gdx.input.isKeyPressed(Keys.RIGHT)){
+			player.translateX(2);
+		}
+		if(Gdx.input.isKeyPressed(Keys.LEFT)){
+			player.translateX(-2);
+		}
+		if(Gdx.input.isKeyPressed(Keys.UP)){
+			player.translateY(-2);
+		}
+		if(Gdx.input.isKeyPressed(Keys.DOWN)){
+			player.translateY(2);
 		}
 	}
 
