@@ -19,7 +19,7 @@ public class Minigame1 extends Minigame
 
 	ArrayList<Block> blocks;
     private boolean gameFinished = false ;
-    private Player player;
+    private FrogPlayer player;
     private Random random = new Random();
     private float gravity = 0.6f;
 	SpriteBatch batch;
@@ -29,7 +29,7 @@ public class Minigame1 extends Minigame
 		camera = new MaCamera();
 		batch = new SpriteBatch();
 
-		player = new Player(new Texture("content/1.png"));
+		player = new FrogPlayer(new Texture("content/1.png"));
 		player.setBounds(200, 400-64, 64, 64);
 
 		blocks = new ArrayList<Block>();

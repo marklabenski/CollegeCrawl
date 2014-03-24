@@ -1,5 +1,7 @@
 package com.fhd.CollegeCrawl;
 
+import java.util.ArrayList;
+
 import Minigames.BugHunt.BugHuntCore;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
@@ -8,6 +10,7 @@ import com.badlogic.gdx.graphics.GL10;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.math.Rectangle;
 
 
 public class CollegeCrawlGame implements ApplicationListener
@@ -17,22 +20,23 @@ public class CollegeCrawlGame implements ApplicationListener
 	private SpriteBatch batch;
 	private Minigame minigame = null;
 	private Sprite worldmap;
-	private Sprite player;
+	private Player player;
+	private ArrayList<Rectangle> blocks = new ArrayList<Rectangle>();
 
 	@Override
 	public void create() {
 		camera = new MaCamera();
-		camera.setToOrtho(true);
 		camera.zoom = 0.5f;
 		batch = new SpriteBatch();
 
-		player = new Sprite(new Texture("content/girl_walk/1.png"));
-		player.setBounds(100, 100, 64, 64);
-		player.flip(false, true);
+		player = new Player(1);
 		
 		worldmap = new Sprite(new Texture("content/map.png"));
 		worldmap.setBounds(0, 0, 1024, 1024);
 		worldmap.flip(false, true);
+		
+		//TODO grobe collision-map machen
+		//TODO player movement nur mit "gohere", animationen darauf ändern
 	}
 
 
@@ -56,6 +60,7 @@ public class CollegeCrawlGame implements ApplicationListener
 
 			worldmap.draw(batch);
 			player.draw(batch);
+			player.update();
 			
 			batch.end();
 		}
@@ -78,15 +83,28 @@ public class CollegeCrawlGame implements ApplicationListener
 
 		if(Gdx.input.isKeyPressed(Keys.RIGHT)){
 			player.translateX(2);
+			player.goRight();
+		} else {
+			player.isWalkingRight = false;
 		}
 		if(Gdx.input.isKeyPressed(Keys.LEFT)){
 			player.translateX(-2);
+			player.goLeft();
+		} else {
+			player.isWalkingLeft = false;
 		}
+		
 		if(Gdx.input.isKeyPressed(Keys.UP)){
-			player.translateY(-2);
+			player.translateY(-1.7f);
+			player.goUp();
+		} else {
+			player.isWalkingUp = false;
 		}
 		if(Gdx.input.isKeyPressed(Keys.DOWN)){
-			player.translateY(2);
+			player.translateY(1.7f);
+			player.goDown();
+		} else {
+			player.isWalkingDown = false;
 		}
 	}
 
