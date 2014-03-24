@@ -21,6 +21,7 @@ public class CollegeCrawlGame implements ApplicationListener {
 		float w = Gdx.graphics.getWidth();
 		float h = Gdx.graphics.getHeight();
 
+
         //testzeile
         //hallo
 
