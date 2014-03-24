@@ -2,22 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8284869b-d135-4ac7-9507-6126bab5d637" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/content/0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/content/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/content/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CollegeCrawl-robovm/bin/com/fhd/CollegeCrawl/RobovmLauncher.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/fhd/CollegeCrawl/Block.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/fhd/CollegeCrawl/ColorBlock.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/fhd/CollegeCrawl/MaCamera.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/fhd/CollegeCrawl/Minigame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/fhd/CollegeCrawl/Minigame1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/fhd/CollegeCrawl/Minigame2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/fhd/CollegeCrawl/Player.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../CollegeCrawl-desktop/src/com/fhd/CollegeCrawl/Main.java" afterPath="$PROJECT_DIR$/../CollegeCrawl-desktop/src/com/fhd/CollegeCrawl/PCLauncher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CollegeCrawl-desktop/.classpath" afterPath="$PROJECT_DIR$/../CollegeCrawl-desktop/.classpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CollegeCrawl-desktop/.project" afterPath="$PROJECT_DIR$/../CollegeCrawl-desktop/.project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java" afterPath="$PROJECT_DIR$/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CollegeCrawl.iws" />
@@ -94,10 +78,8 @@
       <file leaf-file-name="CollegeCrawlGame.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="35" selection-start="469" selection-end="469" vertical-scroll-proportion="0.1142132" vertical-offset="195" max-vertical-offset="1575">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="16" column="30" selection-start="474" selection-end="474" vertical-scroll-proportion="-0.15" vertical-offset="330" max-vertical-offset="1860">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -126,9 +108,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1282" />
+    <option name="x" value="-1280" />
     <option name="y" value="22" />
-    <option name="width" value="1680" />
+    <option name="width" value="1280" />
     <option name="height" value="746" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -162,7 +144,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -177,34 +159,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CollegeCrawl-desktop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CollegeCrawl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CollegeCrawl-desktop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CollegeCrawl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CollegeCrawl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="CollegeCrawl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -220,6 +174,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CollegeCrawl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CollegeCrawl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BugHunt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -269,9 +241,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CollegeCrawl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CollegeCrawl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CollegeCrawl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CollegeCrawl-desktop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -376,19 +376,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -414,6 +401,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -521,11 +521,15 @@
       <created>1395686894397</created>
       <updated>1395686894397</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="test">
+      <created>1395692365382</created>
+      <updated>1395692365382</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1282" y="22" width="1680" height="746" extended-state="6" />
+    <frame x="-1280" y="22" width="1280" height="746" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -538,20 +542,20 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34872612" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34872612" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3280255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1953602" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19466881" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2467685" sideWeight="0.47008547" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Byte Code Viewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="100" y="122" width="1480" height="769" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -570,7 +574,8 @@
     <MESSAGE value="The second one&#10;" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;CollegeCrawl-desktop/src/com/fhd/CollegeCrawl/Main.java&#10;" />
     <MESSAGE value="Merge remote-tracking branch 'remotes/origin/master'&#10;&#10;Conflicts:&#10;&#9;CollegeCrawl-desktop/bin/com/fhd/CollegeCrawl/Main.class&#10;&#9;CollegeCrawl/bin/com/fhd/CollegeCrawl/CollegeCrawlGame.class&#10;&#9;CollegeCrawl/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'remotes/origin/master'&#10;&#10;Conflicts:&#10;&#9;CollegeCrawl-desktop/bin/com/fhd/CollegeCrawl/Main.class&#10;&#9;CollegeCrawl/bin/com/fhd/CollegeCrawl/CollegeCrawlGame.class&#10;&#9;CollegeCrawl/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java&#10;" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -589,10 +594,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="30" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="1860">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CollegeCrawl-html/src/com/fhd/CollegeCrawl/client/GwtLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="1" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="0" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1575">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -606,9 +623,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="48" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0" vertical-offset="179" max-vertical-offset="1170">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -622,9 +637,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="18" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1155">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -638,9 +651,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="32" selection-start="1426" selection-end="1426" vertical-scroll-proportion="0.0" vertical-offset="134" max-vertical-offset="1155">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -654,9 +665,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="8" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.0" vertical-offset="401" max-vertical-offset="1155">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -670,9 +679,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="42" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1155">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -686,9 +693,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="19" selection-start="791" selection-end="791" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1155">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -700,9 +705,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="19" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1110">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -714,9 +717,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="13" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1080">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -739,10 +740,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="35" selection-start="469" selection-end="469" vertical-scroll-proportion="0.1142132" vertical-offset="195" max-vertical-offset="1575">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="16" column="30" selection-start="474" selection-end="474" vertical-scroll-proportion="-0.15" vertical-offset="330" max-vertical-offset="1860">
+          <folding />
         </state>
       </provider>
     </entry>
