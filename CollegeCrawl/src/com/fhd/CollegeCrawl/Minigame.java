@@ -11,7 +11,7 @@ import java.util.Random;
 public class Minigame {
     public boolean gameFinished = false;
 
-    protected SpriteBatch batch;
+    public SpriteBatch batch;
     public MaCamera camera;
 
     public Minigame() {

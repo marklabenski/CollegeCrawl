@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8284869b-d135-4ac7-9507-6126bab5d637" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/content/map2.png" afterPath="$PROJECT_DIR$/data/content/map2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Minigames/BugHunt/BugHuntCore.java" afterPath="$PROJECT_DIR$/src/Minigames/BugHunt/BugHuntCore.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/fhd/CollegeCrawl/Minigame.java" afterPath="$PROJECT_DIR$/src/com/fhd/CollegeCrawl/Minigame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CollegeCrawl.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,16 +80,36 @@
       <file leaf-file-name="CollegeCrawlGame.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="30" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0" vertical-offset="1155" max-vertical-offset="1755">
+            <state line="16" column="30" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="1860">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PCLauncher.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PCLauncher.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../CollegeCrawl-desktop/src/com/fhd/CollegeCrawl/PCLauncher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="173" selection-end="173" vertical-scroll-proportion="0.125" vertical-offset="0" max-vertical-offset="600">
+            <state line="19" column="0" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BugHuntCore.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Minigames/BugHunt/BugHuntCore.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="50" selection-start="451" selection-end="451" vertical-scroll-proportion="0.5381166" vertical-offset="0" max-vertical-offset="555">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Minigame.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/fhd/CollegeCrawl/Minigame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="31" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
               <folding />
             </state>
           </provider>
@@ -113,6 +135,8 @@
       <list>
         <option value="$PROJECT_DIR$/../CollegeCrawl-html/src/com/fhd/CollegeCrawl/client/GwtLauncher.java" />
         <option value="$PROJECT_DIR$/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java" />
+        <option value="$PROJECT_DIR$/src/com/fhd/CollegeCrawl/Minigame.java" />
+        <option value="$PROJECT_DIR$/src/Minigames/BugHunt/BugHuntCore.java" />
       </list>
     </option>
   </component>
@@ -154,6 +178,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -330,7 +355,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -367,6 +391,11 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="613" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/content" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.PCLauncher">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -435,6 +464,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -460,19 +502,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -588,7 +617,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1280" y="22" width="1280" height="746" extended-state="0" />
+    <frame x="-1280" y="22" width="1280" height="746" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -608,13 +637,13 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19466881" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2467685" sideWeight="0.47008547" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24522293" sideWeight="0.47008547" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Byte Code Viewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="100" y="122" width="1480" height="769" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -644,6 +673,43 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../CollegeCrawl-html/src/com/fhd/CollegeCrawl/client/GwtLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="1" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="30" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="1860">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CollegeCrawl-desktop/src/com/fhd/CollegeCrawl/PCLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Minigames/BugHunt/BugHuntCore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="8" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="495">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fhd/CollegeCrawl/Minigame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../CollegeCrawl-html/src/com/fhd/CollegeCrawl/client/GwtLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="1" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="360">
@@ -806,8 +872,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../CollegeCrawl-desktop/src/com/fhd/CollegeCrawl/PCLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="173" selection-end="173" vertical-scroll-proportion="0.125" vertical-offset="0" max-vertical-offset="600">
+        <state line="19" column="0" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fhd/CollegeCrawl/Minigame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="31" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Minigames/BugHunt/BugHuntCore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="50" selection-start="451" selection-end="451" vertical-scroll-proportion="0.5381166" vertical-offset="0" max-vertical-offset="555">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
