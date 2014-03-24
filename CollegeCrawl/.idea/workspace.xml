@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8284869b-d135-4ac7-9507-6126bab5d637" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/fhd/CollegeCrawl/Fleat.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Minigames/BugHunt/BugHuntCore.java" afterPath="$PROJECT_DIR$/src/Minigames/BugHunt/BugHuntCore.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CollegeCrawl-desktop/CollegeCrawl-desktop.iml" afterPath="$PROJECT_DIR$/../CollegeCrawl-desktop/CollegeCrawl-desktop.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CollegeCrawl.iml" afterPath="$PROJECT_DIR$/CollegeCrawl.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CollegeCrawl.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -99,7 +97,7 @@
       <file leaf-file-name="BugHuntCore.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Minigames/BugHunt/BugHuntCore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="50" selection-start="451" selection-end="451" vertical-scroll-proportion="0.5381166" vertical-offset="0" max-vertical-offset="555">
+            <state line="26" column="0" selection-start="673" selection-end="673" vertical-scroll-proportion="0.9898477" vertical-offset="0" max-vertical-offset="570">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -597,7 +595,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1280" y="22" width="1280" height="746" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -609,14 +607,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34872612" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34872612" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3280255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19466881" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24522293" sideWeight="0.47008547" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19466881" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24522293" sideWeight="0.47008547" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -865,7 +863,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Minigames/BugHunt/BugHuntCore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="50" selection-start="451" selection-end="451" vertical-scroll-proportion="0.5381166" vertical-offset="0" max-vertical-offset="555">
+        <state line="26" column="0" selection-start="673" selection-end="673" vertical-scroll-proportion="0.9898477" vertical-offset="0" max-vertical-offset="570">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,5 +1,6 @@
 package Minigames.BugHunt;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -20,7 +21,7 @@ public class BugHuntCore extends Minigame{
     @Override
     public void run() {
         super.run();
-        tempSprite.setBounds(100,100,200,200);
+        tempSprite.setBounds(0,0, Gdx.graphics.getWidth(),Gdx.graphics.getHeight());
 
         batch.begin();
 
