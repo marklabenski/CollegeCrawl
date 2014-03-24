@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8284869b-d135-4ac7-9507-6126bab5d637" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/content/map2.png" afterPath="$PROJECT_DIR$/data/content/map2.png" />
     </list>
     <ignored path="CollegeCrawl.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,10 +75,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CollegeCrawlGame.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CollegeCrawlGame.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="30" selection-start="474" selection-end="474" vertical-scroll-proportion="-0.15" vertical-offset="330" max-vertical-offset="1860">
+            <state line="16" column="30" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0" vertical-offset="1155" max-vertical-offset="1755">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PCLauncher.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../CollegeCrawl-desktop/src/com/fhd/CollegeCrawl/PCLauncher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="173" selection-end="173" vertical-scroll-proportion="0.125" vertical-offset="0" max-vertical-offset="600">
               <folding />
             </state>
           </provider>
@@ -151,6 +160,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="CollegeCrawl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CollegeCrawl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CollegeCrawl-html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -267,6 +286,46 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="CollegeCrawl-desktop" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CollegeCrawl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CollegeCrawl-desktop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CollegeCrawl-desktop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CollegeCrawl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CollegeCrawl-desktop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CollegeCrawl-desktop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CollegeCrawl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -530,7 +589,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1280" y="22" width="1280" height="746" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -740,7 +799,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="30" selection-start="474" selection-end="474" vertical-scroll-proportion="-0.15" vertical-offset="330" max-vertical-offset="1860">
+        <state line="16" column="30" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0" vertical-offset="1155" max-vertical-offset="1755">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CollegeCrawl-desktop/src/com/fhd/CollegeCrawl/PCLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="173" selection-end="173" vertical-scroll-proportion="0.125" vertical-offset="0" max-vertical-offset="600">
           <folding />
         </state>
       </provider>
