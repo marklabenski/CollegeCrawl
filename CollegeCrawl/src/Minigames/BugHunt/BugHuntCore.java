@@ -14,7 +14,7 @@ public class BugHuntCore extends Minigame{
 
     public BugHuntCore() {
         super();
-        tempSprite = new Sprite(new Texture("data/content/screen.png"));
+        tempSprite = new Sprite(new Texture("content/screen.png"));
     }
 
     @Override
