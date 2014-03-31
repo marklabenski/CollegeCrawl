@@ -18,7 +18,6 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
-import com.sun.xml.internal.bind.v2.runtime.unmarshaller.LocatorEx.Snapshot;
 
 
 public class CollegeCrawlGame implements ApplicationListener
@@ -106,7 +105,17 @@ public class CollegeCrawlGame implements ApplicationListener
 			if(!debugmode)
 			{
 				input();
-			}		
+			}
+			if(Gdx.input.isKeyPressed(Keys.E) && buttontimer.done())
+			{
+				if(debugmode)
+				{
+					debugmode = false;
+				} else {
+					debugmode = true;
+				}
+				buttontimer.wait(200);
+			}
 		}
 
 
@@ -240,11 +249,15 @@ public class CollegeCrawlGame implements ApplicationListener
 				if(selected != null && b.equals(selected))
 				{
 					shaperenderer.setColor(Color.RED);
+					shaperenderer.rect(b.x, b.y, b.width,b.height);
+					shaperenderer.rect(b.x+8, b.y+8, b.width-16,b.height-16);
+
 				} else {		
 					shaperenderer.setColor(Color.BLUE);
+					shaperenderer.rect(b.x, b.y, b.width,b.height);
+
 				}
 
-				shaperenderer.rect(b.x, b.y, b.width,b.height);
 			}
 
 			shaperenderer.end();
@@ -282,8 +295,7 @@ public class CollegeCrawlGame implements ApplicationListener
 		{
 			minigame = null;
 		}
-
-
+		
 	}
 
 
