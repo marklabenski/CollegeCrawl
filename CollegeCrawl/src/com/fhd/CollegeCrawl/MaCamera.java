@@ -41,8 +41,6 @@ public class MaCamera extends OrthographicCamera
 	
 	public void goHereSmoth(float _x, float _y) 
 	{
-		System.out.println(this.position);
-
 		float dx = _x - this.position.x;
 		float dy = _y - this.position.y;
 		double h = Math.sqrt(dx * dx + dy * dy);

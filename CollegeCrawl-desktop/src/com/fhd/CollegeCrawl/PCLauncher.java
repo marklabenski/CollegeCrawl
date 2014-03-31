@@ -13,7 +13,7 @@ public class PCLauncher {
 		cfg.height = 600;
 		
 		new LwjglApplication(new CollegeCrawlGame(), cfg);
-		
+
 		//wiiiiiiiii christoph
 	}
 }
