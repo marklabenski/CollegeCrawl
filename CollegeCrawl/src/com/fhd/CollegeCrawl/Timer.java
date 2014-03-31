@@ -3,13 +3,43 @@ package com.fhd.CollegeCrawl;
 
 public class Timer {
 
-	private long wait = -1;
+    private long endTime;
+    private long startTime;
+    private int bonus = 1500;
+    private int startValue = 30000;
 
-	public void wait(int ms){
-		wait  = System.currentTimeMillis()+ms;
-	}
-	
-	public boolean done(){
-		return !(wait != -1 && wait > System.currentTimeMillis()); //if waiting point is in the future
-	}
+    public Timer() {
+        this.startTime = System.currentTimeMillis();
+        this.endTime = this.startTime + startValue;
+    }
+
+    public Timer(int withValue, int andBonus){
+        this.startValue = withValue;
+        this.bonus = andBonus;
+        this.startTime = System.currentTimeMillis();
+        this.endTime = this.startTime + startValue;
+    }
+
+    public long getRemainingTime(){
+        return this.endTime - System.currentTimeMillis();
+    }
+
+    public long getElapsedTime(){
+        if(this.endTime <= System.currentTimeMillis()) {
+            return this.endTime - this.startTime;
+        }
+        else return -1;
+    }
+
+    public void resetTimer(){
+        this.endTime = System.currentTimeMillis() + startValue;
+    }
+
+    public void addBonus(){
+        this.endTime += this.bonus;
+    }
+
+    public boolean done(){
+        return (this.endTime >= System.currentTimeMillis());
+    }
 }
