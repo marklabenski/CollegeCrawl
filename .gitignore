@@ -15,3 +15,7 @@ hs_err_pid*
 *.xml
 *.iml
 *.DS_Store
+
+bin/
+
+bin/.gitignore
