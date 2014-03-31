@@ -187,7 +187,7 @@ public class CollegeCrawlGame implements ApplicationListener
 		}
 		if(Gdx.input.isKeyPressed(Keys.NUM_3))
 		{
-			minigame = new HackInvaders();
+			minigame = new HackInvaders(); 
 		}
 
 		if(Gdx.input.isKeyPressed(Keys.RIGHT)){
