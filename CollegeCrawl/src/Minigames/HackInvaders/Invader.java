@@ -24,6 +24,10 @@ public class Invader extends Sprite {
 
     }
 
+    public void destroy(){
+        this.active = false;
+    }
+
     public boolean isActive() {
         return active;
     }

@@ -5,6 +5,7 @@ import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.fhd.CollegeCrawl.Minigame;
+import com.fhd.CollegeCrawl.Timer;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -18,11 +19,15 @@ public class HackInvaders extends Minigame {
     ArrayList<Invader> invaders;
     float invaderSpeed = 0.7f;
 
+    Timer spawnTimer;
+
     public HackInvaders() {
         super();
         defender = new Defender();
         shots = new ArrayList<Shot>();
         invaders = new ArrayList<Invader>();
+
+        spawnTimer = new Timer();
     }
 
     @Override
@@ -51,12 +56,27 @@ public class HackInvaders extends Minigame {
 
         batch.end();
 
+        //Schüsse + Invader auf Kolision prüfen
+        for(Shot shot : shots){
+            if(shot.isActive()){
+                for(Invader invader : invaders){
+                    if(shot.getBoundingRectangle().overlaps(invader.getBoundingRectangle())){
+                        invader.destroy();
+                    }
+                }
+            }
+        }
+
 
         //Schnelligkeit von Invadern erhöhen
         this.invaderSpeed += 0.01f;
 
         //neuen Invader erstellen
-        invaders.add(new Invader(this.invaderSpeed));
+        if(spawnTimer.done()) {
+            invaders.add(new Invader(this.invaderSpeed));
+            spawnTimer.wait(500);
+        }
+
         input();
     }
 
