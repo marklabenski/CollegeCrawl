@@ -24,6 +24,13 @@ public class Timer {
         return this.endTime - System.currentTimeMillis();
     }
 
+    public long getElapsedTime(){
+        if(this.endTime <= System.currentTimeMillis()) {
+            return this.endTime - this.startTime;
+        }
+        else return -1;
+    }
+
     public void resetTimer(){
         this.endTime = System.currentTimeMillis() + startValue;
     }
