@@ -1,0 +1,12 @@
+.iml
+
+*.iml
+
+/.idea/
+
+/CollegeCrawl-desktop/CollegeCrawl-desktop.iml
+/CollegeCrawl/CollegeCrawl.iml
+
+CollegeCrawl-desktop.iml
+
+bin/

@@ -15,11 +15,14 @@ import java.util.ArrayList;
 public class HackInvaders extends Minigame {
     Defender defender;
     ArrayList<Shot> shots;
+    ArrayList<Invader> invaders;
+    float invaderSpeed = 0.7f;
 
     public HackInvaders() {
         super();
         defender = new Defender();
         shots = new ArrayList<Shot>();
+        invaders = new ArrayList<Invader>();
     }
 
     @Override
@@ -33,15 +36,35 @@ public class HackInvaders extends Minigame {
 
         //Schüsse zeichnen
         for(Shot shot : shots) {
-            shot.draw(batch);
-            shot.move();
+            if(shot.isActive()) {
+                shot.draw(batch);
+                shot.move();
+            }
+        }
+        //Invadder zeichnen
+        for(Invader invader : invaders){
+            if(invader.isActive()){
+                invader.draw(batch);
+                invader.move(this.invaderSpeed);
+            }
         }
 
         batch.end();
 
+
+        //Schnelligkeit von Invadern erhöhen
+        this.invaderSpeed += 0.01f;
+
+        //neuen Invader erstellen
+        invaders.add(new Invader(this.invaderSpeed));
         input();
     }
 
+    /**
+     * Neuen Schuss absetzen
+     * @param x Startpunkt x Koordinate
+     * @param y Startpunkt Y Koordinate
+     */
     private void shot(float x, float y) {
         shots.add(new Shot(x, y));
     }
