@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8284869b-d135-4ac7-9507-6126bab5d637" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Minigames/HackInvaders/Defender.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Minigames/HackInvaders/Shot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java" afterPath="$PROJECT_DIR$/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Minigames/HackInvaders/HackInvaders.java" afterPath="$PROJECT_DIR$/src/Minigames/HackInvaders/HackInvaders.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CollegeCrawl.iws" />
@@ -66,10 +70,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GwtLauncher.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GwtLauncher.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../CollegeCrawl-html/src/com/fhd/CollegeCrawl/client/GwtLauncher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="1" selection-start="562" selection-end="562" vertical-scroll-proportion="0.36585367" vertical-offset="0" max-vertical-offset="615">
+            <state line="18" column="1" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CollegeCrawlGame.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="180" column="33" selection-start="4560" selection-end="4560" vertical-scroll-proportion="0.0" vertical-offset="2895" max-vertical-offset="3510">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HackInvaders.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Minigames/HackInvaders/HackInvaders.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="16" selection-start="451" selection-end="451" vertical-scroll-proportion="0.29268292" vertical-offset="0" max-vertical-offset="945">
               <folding />
             </state>
           </provider>
@@ -94,10 +118,10 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/../CollegeCrawl-html/src/com/fhd/CollegeCrawl/client/GwtLauncher.java" />
-        <option value="$PROJECT_DIR$/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java" />
         <option value="$PROJECT_DIR$/src/com/fhd/CollegeCrawl/Minigame.java" />
         <option value="$PROJECT_DIR$/src/Minigames/BugHunt/Bug.java" />
         <option value="$PROJECT_DIR$/src/Minigames/BugHunt/BugHuntCore.java" />
+        <option value="$PROJECT_DIR$/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java" />
       </list>
     </option>
   </component>
@@ -245,6 +269,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Minigames" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BugHunt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -633,13 +661,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Minigames/BugHunt/Bug.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="22" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="705">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/fhd/CollegeCrawl/Minigame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="22" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="525">
@@ -650,7 +671,9 @@
     <entry file="file://$PROJECT_DIR$/../CollegeCrawl-html/src/com/fhd/CollegeCrawl/client/GwtLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="1" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -699,7 +722,9 @@
     <entry file="file://$PROJECT_DIR$/../CollegeCrawl-html/src/com/fhd/CollegeCrawl/client/GwtLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="1" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -748,7 +773,9 @@
     <entry file="file://$PROJECT_DIR$/../CollegeCrawl-html/src/com/fhd/CollegeCrawl/client/GwtLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="1" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -783,7 +810,9 @@
     <entry file="file://$PROJECT_DIR$/../CollegeCrawl-html/src/com/fhd/CollegeCrawl/client/GwtLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="1" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="360">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -797,7 +826,9 @@
     <entry file="file://$PROJECT_DIR$/../CollegeCrawl-html/src/com/fhd/CollegeCrawl/client/GwtLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="1" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="360">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -811,7 +842,9 @@
     <entry file="file://$PROJECT_DIR$/../CollegeCrawl-html/src/com/fhd/CollegeCrawl/client/GwtLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="1" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -825,7 +858,9 @@
     <entry file="file://$PROJECT_DIR$/../CollegeCrawl-html/src/com/fhd/CollegeCrawl/client/GwtLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="1" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -839,7 +874,9 @@
     <entry file="file://$PROJECT_DIR$/../CollegeCrawl-html/src/com/fhd/CollegeCrawl/client/GwtLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="1" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -853,7 +890,9 @@
     <entry file="file://$PROJECT_DIR$/../CollegeCrawl-html/src/com/fhd/CollegeCrawl/client/GwtLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="1" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="360">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -867,7 +906,9 @@
     <entry file="file://$PROJECT_DIR$/../CollegeCrawl-html/src/com/fhd/CollegeCrawl/client/GwtLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="1" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="360">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -881,7 +922,9 @@
     <entry file="file://$PROJECT_DIR$/../CollegeCrawl-html/src/com/fhd/CollegeCrawl/client/GwtLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="1" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -947,13 +990,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Minigames/HackInvaders/HackInvaders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="23" selection-start="246" selection-end="246" vertical-scroll-proportion="0.34146342" vertical-offset="0" max-vertical-offset="615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Minigames/BugHunt/BugHuntCore.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="241" selection-end="241" vertical-scroll-proportion="0.07317073" vertical-offset="0" max-vertical-offset="615">
@@ -968,16 +1004,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../CollegeCrawl-html/src/com/fhd/CollegeCrawl/client/GwtLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="1" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/fhd/CollegeCrawl/CollegeCrawlGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="30" selection-start="781" selection-end="781" vertical-scroll-proportion="-0.36585367" vertical-offset="360" max-vertical-offset="3510">
+        <state line="180" column="33" selection-start="4560" selection-end="4560" vertical-scroll-proportion="0.0" vertical-offset="2895" max-vertical-offset="3510">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../CollegeCrawl-html/src/com/fhd/CollegeCrawl/client/GwtLauncher.java">
+    <entry file="file://$PROJECT_DIR$/src/Minigames/HackInvaders/Defender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="1" selection-start="562" selection-end="562" vertical-scroll-proportion="0.36585367" vertical-offset="0" max-vertical-offset="615">
+        <state line="10" column="13" selection-start="252" selection-end="252" vertical-scroll-proportion="0.17073171" vertical-offset="0" max-vertical-offset="615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Minigames/HackInvaders/HackInvaders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="16" selection-start="451" selection-end="451" vertical-scroll-proportion="0.29268292" vertical-offset="0" max-vertical-offset="945">
           <folding />
         </state>
       </provider>
