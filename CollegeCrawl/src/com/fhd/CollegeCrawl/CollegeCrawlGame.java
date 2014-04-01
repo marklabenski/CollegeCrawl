@@ -3,6 +3,7 @@ package com.fhd.CollegeCrawl;
 import java.util.ArrayList;
 
 import Minigames.BugHunt.BugHuntCore;
+import Minigames.FlappyServer.Flappy;
 import Minigames.HackInvaders.HackInvaders;
 
 import com.badlogic.gdx.ApplicationListener;
@@ -184,7 +185,7 @@ public class CollegeCrawlGame implements ApplicationListener
 		if(Gdx.input.isKeyPressed(Keys.NUM_2))
 		{
 			minigame = null;
-			minigame = new HackInvaders();	
+			minigame = new Flappy();	
 		}
 		if(Gdx.input.isKeyPressed(Keys.NUM_3))
 		{
