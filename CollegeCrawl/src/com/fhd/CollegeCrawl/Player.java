@@ -27,7 +27,7 @@ public class Player extends Sprite{
 	public Rectangle top;
 	public Rectangle bottom;
 	public Rectangle rect;
-	protected String type = "girl";
+	protected String type = "guy";
 
 	//TODO player braucht collision-rectangles
 

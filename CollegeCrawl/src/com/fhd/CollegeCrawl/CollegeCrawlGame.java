@@ -9,6 +9,7 @@ import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL10;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.ParticleEffect;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
@@ -39,6 +40,7 @@ public class CollegeCrawlGame implements ApplicationListener
 	private Rectangle selected;
 	private Timer buttontimer = new Timer();
 	private Vector2 touchSnaped = new Vector2();
+	private ArrayList<ParticleEffect> ambientFX = new ArrayList<ParticleEffect>();
 
 	@Override
 	public void create() {
@@ -62,6 +64,7 @@ public class CollegeCrawlGame implements ApplicationListener
 
 		blocks.addAll(filemanager.loadBlocks());
 		animations.add(new Animation(300,300,"temp"));
+		addParticleEffect("sunshine", 1000,1700);
 	}
 
 
@@ -78,7 +81,7 @@ public class CollegeCrawlGame implements ApplicationListener
 			Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
 			camera.update();
 			batch.setProjectionMatrix(camera.combined);
-			
+
 			if(!debugmode)
 			{
 				//				camera.goHereSmoth(player.getX(), player.getY());
@@ -118,8 +121,14 @@ public class CollegeCrawlGame implements ApplicationListener
 				forgroundNPCS.get(i).draw(batch);
 			}
 
+			//draw particle effects
+			for (ParticleEffect fx : ambientFX) {
+				fx.draw(batch);
+			}
+
 			batch.end();//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
+			updateParticle();
 			npcDraworder();
 			collision();
 			editor();
@@ -289,7 +298,7 @@ public class CollegeCrawlGame implements ApplicationListener
 						Rectangle duplicatedRect = new Rectangle(selected.x + 50,selected.y+50,selected.width,selected.height);
 						selected = duplicatedRect;
 						blocks.add(duplicatedRect);
-						
+
 						buttontimer.wait(400);
 					}
 					if(Gdx.input.isKeyPressed(Keys.L))
@@ -299,22 +308,22 @@ public class CollegeCrawlGame implements ApplicationListener
 					}
 					if(Gdx.input.isKeyPressed(Keys.UP))
 					{
-						selected.setHeight(selected.getHeight()-16);
+						selected.setHeight(selected.getHeight()-8);
 						buttontimer.wait(100);
 					}
 					if(Gdx.input.isKeyPressed(Keys.DOWN))
 					{
-						selected.setHeight(selected.getHeight()+16);
+						selected.setHeight(selected.getHeight()+8);
 						buttontimer.wait(100);
 					}
 					if(Gdx.input.isKeyPressed(Keys.LEFT))
 					{
-						selected.setWidth(selected.getWidth()-16);
+						selected.setWidth(selected.getWidth()-8);
 						buttontimer.wait(100);
 					}
 					if(Gdx.input.isKeyPressed(Keys.RIGHT))
 					{
-						selected.setWidth(selected.getWidth()+16);
+						selected.setWidth(selected.getWidth()+8);
 						buttontimer.wait(100);
 					}
 				}
@@ -385,6 +394,25 @@ public class CollegeCrawlGame implements ApplicationListener
 			minigame = null;
 		}
 
+	}
+
+	private void addParticleEffect(String in, float x, float y) {
+		ParticleEffect pe = new ParticleEffect();
+		pe.load(Gdx.files.internal("content/particles/" + in + ".p"),
+				Gdx.files.internal("content/particles"));
+		pe.start();
+		pe.setPosition(x, y);
+		ambientFX.add(pe);
+	}
+
+	private void updateParticle() {
+		for (int i = ambientFX.size() - 1; i >= 0; i--) {
+
+			ambientFX.get(i).update(Gdx.graphics.getRawDeltaTime());
+			if (ambientFX.get(i).isComplete()) {
+				ambientFX.remove(i);
+			}
+		}
 	}
 
 
