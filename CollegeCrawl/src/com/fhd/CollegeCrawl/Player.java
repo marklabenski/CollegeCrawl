@@ -1,5 +1,7 @@
 package com.fhd.CollegeCrawl;
 
+import java.util.Random;
+
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.math.Rectangle;
@@ -25,8 +27,8 @@ public class Player extends Sprite{
 	public Rectangle top;
 	public Rectangle bottom;
 	public Rectangle rect;
-	public String type = "guy";
-	
+	protected String type = "girl";
+
 	//TODO player braucht collision-rectangles
 
 	/**
@@ -44,37 +46,53 @@ public class Player extends Sprite{
 		imgidle = new Texture("content/"+type+"/idle.png");
 
 		this.set(new Sprite(imgidle));
-		this.setBounds(300, 300, 64, 64);
+		this.setBounds(1000, 1000, 64, 64);
 		this.flip(true, true);
 		isLookingRight = true;
 		destPos = new Vector2(this.getX(),this.getY());
-	
+
 		left = new Rectangle();
 		right = new Rectangle();
 		top = new Rectangle();
 		bottom = new Rectangle();
 		rect = new Rectangle();
-		
+
 		left.set(this.getX()+0,this.getY()+16,24,32);
 		right.set(this.getX()+40,this.getY()+16,24,32);
 		top.set(this.getX()+16,this.getY()+0,32,24);
 		bottom.set(this.getX()+16,this.getY()+40,32,24);
 		rect.set(this.getX()+16,this.getY()+32,32,32);
 	}
-	
-	
-	
 
+	protected void setApperence(String _type)
+	{
+		//		for (int i=0; i < maxframes; i++)
+		//		{
+		//			walk_ani_tex[i] = new Texture("content/"+_type+"/"+i+".png");
+		//		}
+
+		imgidle = new Texture("content/"+_type+"/idle.png");
+		this.set(new Sprite(imgidle));
+		this.setBounds(300, 300, 64, 64);
+		this.flip(true, true);
+
+		if(new Random().nextBoolean())
+		{
+			this.flip(true, false);
+		}
+	}
+
+	//setze einen Nav Punkt
 	public void setNav(Vector2 nav)
 	{
 		//nav in die mitte des sprites setzen
 		nav.x = nav.x - 32;
-		nav.y = nav.y - 50;
-		
+		nav.y = nav.y - 54;
+
+		this.destReached = false;
 		this.destPos = nav;
 		if(destPos.x < this.getX())
 		{
-//			this.setTexture(imgidle);
 			if(!isLookingLeft){
 				this.flip(true, false);
 				isLookingLeft = true;
@@ -82,16 +100,14 @@ public class Player extends Sprite{
 		} 
 		else 
 		{
-//			this.setTexture(imgidle);
 			if(isLookingLeft){
 				this.flip(true, false);
 				isLookingLeft = false;
 			}
 		}
-
-
 	}
 
+	//update die position beim triangulieren
 	public void goToNav()
 	{
 		final Vector2 destVec = new Vector2(destPos.x, destPos.y);
@@ -116,17 +132,18 @@ public class Player extends Sprite{
 		}
 	}
 
-
+	//main update
 	public void update()
 	{
-		left.set(this.getX()+0,this.getY()+16,24,32);
-		right.set(this.getX()+40,this.getY()+16,24,32);
-		top.set(this.getX()+16,this.getY()+0,32,24);
-		bottom.set(this.getX()+16,this.getY()+40,32,24);
+		left.set(this.getX()+18,this.getY()+40,10,16);
+		right.set(this.getX()+38,this.getY()+40,10,16);
+
+		top.set(this.getX()+24,this.getY()+34,16,10);
+		bottom.set(this.getX()+24,this.getY()+54,16,10);
+
 		rect.set(this.getX()+16,this.getY()+32,32,32);
 
 		this.shadow.setBounds(this.getX()+16, this.getY()+50, 32, 32);
-		this.goToNav();
 
 		if(!destReached)
 		{
@@ -136,34 +153,15 @@ public class Player extends Sprite{
 				frame = 0;
 			}
 			this.setTexture(walk_ani_tex[(int) frame]);
+
+			this.goToNav();
 		} 
 		else 
 		{
 			this.setTexture(imgidle);	
 		}
-
-		//keyinput stuff
-		/*
-		if(!isWalkingLeft && !isWalkingRight && !isWalkingUp && !isWalkingDown)
-		{
-			if(isLookingLeft)
-			{
-				this.setTexture(imgleft);
-			} else {
-				this.setTexture(imgright);
-			}
-		} 
-		else 
-		{
-			if(frame >= maxframes)
-			{
-				frame = 0;
-			}
-			this.setTexture(walk_ani_tex[(int) frame]);
-		}
-		 */
 	}
-	
+
 
 	public void goDown(){
 		frame+=0.15;
