@@ -39,18 +39,26 @@ public class NetworkPipes extends Minigame{
 
     private void input(){
         if(Gdx.input.justTouched()){
-
-         //   pipe1.rotate90(true);
+            int x=Gdx.input.getX();
+            int y=Gdx.input.getY();
+            for(Pipe[] ip:this.pipeField){
+                for(Pipe p:ip){
+                    if(p.getBoundingRectangle().contains(x,y)){
+                        p.rotate(false);
+                        break;
+                    }
+                }
+            }
         }
     }
 
     private Pipe randomPipe(){
         Random rand = new Random();
-        int rot = rand.nextInt(4);
-        int type = rand.nextInt(4);
+        int rot = rand.nextInt(3);
+        int type = rand.nextInt(3);
         Pipe randomPipe = new Pipe(type);
         while(rot != 0){
-            randomPipe.rotate90(true);
+            randomPipe.rotate(true);
             rot--;
         }
         return randomPipe;
