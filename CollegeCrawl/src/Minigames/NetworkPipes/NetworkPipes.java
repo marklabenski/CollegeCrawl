@@ -4,15 +4,19 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.fhd.CollegeCrawl.Minigame;
 
+import java.util.Random;
+
 /**
  * Created by Jan on 01/04/14.
  */
 public class NetworkPipes extends Minigame{
-    Pipe pipe1;
+    Pipe[][] pipeField;
+ //   Pipe pipe1;
 
     public NetworkPipes(){
         super();
-        pipe1 = new Pipe('v');
+        this.pipeField = new Pipe[3][3];
+        fillUpField();
     }
 
     @Override
@@ -22,7 +26,11 @@ public class NetworkPipes extends Minigame{
         batch.begin();
 
         //Spielfeld zeichnen
-        pipe1.draw(batch);
+        for(Pipe[] innerArray:this.pipeField){
+            for(Pipe p:innerArray){
+                p.draw(batch);
+            }
+        }
 
         batch.end();
 
@@ -30,9 +38,32 @@ public class NetworkPipes extends Minigame{
     }
 
     private void input(){
-        if(Gdx.input.isKeyPressed(Input.Keys.NUM_8)){
+        if(Gdx.input.justTouched()){
 
-            pipe1.rotate90(true);
+         //   pipe1.rotate90(true);
+        }
+    }
+
+    private Pipe randomPipe(){
+        Random rand = new Random();
+        int rot = rand.nextInt(4);
+        int type = rand.nextInt(4);
+        Pipe randomPipe = new Pipe(type);
+        while(rot != 0){
+            randomPipe.rotate90(true);
+            rot--;
+        }
+        return randomPipe;
+    }
+
+    private void fillUpField(){
+        int posX=320;
+        int posY=100;
+        for(int y=0;y < this.pipeField.length;y++){
+            for(int x=0;x< this.pipeField[y].length;x++){
+                this.pipeField[y][x] = randomPipe();
+                this.pipeField[y][x].setPosition(posX+this.pipeField[y][x].getWidth()*x,posY+this.pipeField[y][x].getHeight()*y);
+            }
         }
     }
 }

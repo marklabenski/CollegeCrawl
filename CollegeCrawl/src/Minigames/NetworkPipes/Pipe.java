@@ -9,15 +9,15 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
  */
 public class Pipe extends Sprite {
     boolean l,r,t,b;
-    Pipe(char type){
+    Pipe(int type){
         super(new Texture("content/pipes/"+ type +".png"));
         this.setBounds(Gdx.graphics.getWidth()/2,Gdx.graphics.getHeight()/2,128,128);
         this.t=true;
         switch (type){
-            case 'x': l=r=b=t; break;
-            case 't': l=b=t; break;
-            case 'v': l=t; break;
-            case 'i': b=t; break;
+            case '0': l=r=b=t; break;
+            case '1': l=b=t; break;
+            case '2': l=t; break;
+            case '3': b=t; break;
         }
     }
 
