@@ -1,11 +1,7 @@
 package com.fhd.CollegeCrawl;
 
 import java.util.ArrayList;
-<<<<<<< HEAD
-
-=======
 import Minigames.BugHunt.BugHuntCore;
->>>>>>> 9c67c14a1958fe0fcddd4d45c9b50bb89e82668f
 import Minigames.HackInvaders.HackInvaders;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
