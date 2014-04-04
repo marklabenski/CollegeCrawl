@@ -24,10 +24,17 @@ public class Invader extends Sprite {
 
     }
 
+    /**
+     * Invader zerstören
+     */
     public void destroy(){
         this.active = false;
     }
 
+    /**
+     * lebt der Invader noch?
+     * @return
+     */
     public boolean isActive() {
         return active;
     }

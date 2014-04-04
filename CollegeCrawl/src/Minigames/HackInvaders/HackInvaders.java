@@ -14,6 +14,11 @@ import java.util.ArrayList;
  * Created by Flo on 28.03.14.
  */
 public class HackInvaders extends Minigame {
+
+    //some statics
+    public static int waitBetweenShots = 20;
+    public static int waitBeforeNewShot = 100;
+
     Defender defender;
     ArrayList<Shot> shots;
     ArrayList<Invader> invaders;
@@ -36,9 +41,6 @@ public class HackInvaders extends Minigame {
 
         batch.begin();
 
-        //Spieler zeichnen
-        defender.draw(batch);
-
         //Schüsse zeichnen
         for(Shot shot : shots) {
             if(shot.isActive()) {
@@ -53,6 +55,9 @@ public class HackInvaders extends Minigame {
                 invader.move(this.invaderSpeed);
             }
         }
+
+        //Spieler zeichnen
+        defender.draw(batch);
 
         batch.end();
 
@@ -69,7 +74,7 @@ public class HackInvaders extends Minigame {
 
 
         //Schnelligkeit von Invadern erhöhen
-        this.invaderSpeed += 0.01f;
+        this.invaderSpeed += 0.002f;
 
         //neuen Invader erstellen
         if(spawnTimer.done()) {
@@ -77,6 +82,7 @@ public class HackInvaders extends Minigame {
             spawnTimer.wait(500);
         }
 
+        //Eingaben verarbeiten
         input();
     }
 
@@ -96,11 +102,14 @@ public class HackInvaders extends Minigame {
         //Hacker bewegen (links/rechts)
         if(Gdx.input.isKeyPressed(Keys.RIGHT)) {
             defender.goRight();
-            shot(defender.getX()+defender.getWidth()/2, defender.getHeight());
-
+            if(defender.canShot()){
+                shot(defender.getX()+defender.getWidth()/2, defender.getHeight());
+            }
         }else if(Gdx.input.isKeyPressed(Keys.LEFT)) {
             defender.goLeft();
-            shot(defender.getX()+defender.getWidth()/2, defender.getHeight());
+            if(defender.canShot()){
+                shot(defender.getX()+defender.getWidth()/2, defender.getHeight());
+            }
         }
 
     }
